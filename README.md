@@ -15,7 +15,7 @@ Now you can use colon(:) character for split key & value parameters in your url 
 http://localhost/project/class/method/param1:value1/param2:value2
 ```
 
-Accessing parameters is also easy, use this code from uri method :
+Accessing parameters is also easy, use this code via uri library :
 ```php
 $param1 = $this->uri->param('param1') // output = value1
 $param2 = $this->uri->param('param2') // output = value2
@@ -23,7 +23,7 @@ $param3 = $this->uri->param('param3') // output = null
 $param4 = $this->uri->param('param4', 1) // output = 1
 ```
 
-Or use this helper function :
+Or use helper function :
 ```php
 $param1 = param('param1') // output = value1
 $param2 = param('param2') // output = value2
